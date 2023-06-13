@@ -6,6 +6,7 @@ This angular project is for testing all the ui components being created at [Tron
 
 ### Under active development
 
+- Card Component
 - Button Component
 
 ### Usable Components
