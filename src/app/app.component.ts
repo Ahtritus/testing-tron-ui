@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeService } from 'tron-ui';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
 
+  constructor(private themeService: ThemeService) {}
+
+
   ngOnInit() {
-    // this.themeService.setTheme('dark'); // Set the desired theme name here
+    this.themeService.setTheme('honey'); // Set the desired theme name here
   }
 
   title = 'myapp';
